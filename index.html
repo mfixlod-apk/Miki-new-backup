@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1020"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>MFIX Cloud</title>
+<style>
+:root{color-scheme:dark;--bg:#080d19;--panel:#111a2b;--line:#25334b;--muted:#9aa9c2;--accent:#79f2c0;--blue:#8aa9ff}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% -15%,#183b45 0,transparent 42%),var(--bg);color:#f4f7ff;font:16px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+.wrap{max-width:980px;margin:auto;padding:env(safe-area-inset-top) 18px calc(32px + env(safe-area-inset-bottom))}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0 28px}.brand{display:flex;gap:12px;align-items:center}.logo{height:44px;width:44px;border-radius:15px;background:linear-gradient(135deg,#7df2c0,#7d9fff);display:grid;place-items:center;color:#07111b;font-weight:900;font-size:18px}.brand strong{display:block;font-size:19px;letter-spacing:.2px}.brand small{color:var(--muted)}.pill{font-size:12px;border:1px solid #2b755d;color:var(--accent);padding:7px 10px;border-radius:30px}
+h1{font-size:clamp(30px,7vw,48px);line-height:1.08;letter-spacing:-1.5px;margin:8px 0 12px}.lead{color:#b7c4d9;line-height:1.65;max-width:610px;margin:0 0 24px}.hero{padding:26px 22px;border:1px solid #2b3a51;border-radius:25px;background:linear-gradient(135deg,rgba(23,42,59,.95),rgba(15,23,40,.92));box-shadow:0 18px 55px #0003}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.btn{appearance:none;border:0;border-radius:13px;padding:13px 17px;font-weight:750;font-size:15px;cursor:pointer}.primary{background:var(--accent);color:#071610}.secondary{background:#1d2940;color:#e7eeff;border:1px solid #35435b}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.stat,.section{border:1px solid var(--line);border-radius:18px;background:#101827;padding:16px}.stat b{display:block;font-size:21px}.stat span{font-size:12px;color:var(--muted)}.section{margin-top:18px;padding:20px}.section h2{font-size:18px;margin:0 0 10px}.section p{color:var(--muted);line-height:1.6;margin:0}.status{display:flex;gap:12px;align-items:flex-start}.dot{width:10px;height:10px;flex:0 0 10px;border-radius:50%;background:#ffcb75;margin-top:6px;box-shadow:0 0 0 5px #ffcb7519}.steps{display:grid;gap:12px;margin-top:16px}.step{display:flex;gap:12px;align-items:flex-start}.num{width:28px;height:28px;border-radius:9px;background:#202e45;color:var(--blue);display:grid;place-items:center;font-weight:800;flex-shrink:0}.step p{margin:2px 0 0}.notice{font-size:12px;color:#8e9db6;margin-top:20px;line-height:1.6}input[type=file]{display:none}footer{text-align:center;color:#64738b;font-size:12px;padding:26px 0 8px}
+@media(min-width:700px){.hero{padding:38px}.stats{gap:14px}.section{padding:24px}}@media(max-width:390px){.stats{grid-template-columns:1fr}.stat{display:flex;align-items:center;justify-content:space-between}.stat b{font-size:18px}}
+</style>
+</head>
+<body><main class="wrap">
+<header><div class="brand"><div class="logo">M</div><div><strong>MFIX Cloud</strong><small>הגלריה הפרטית שלך</small></div></div><span class="pill">PRIVATE SPACE</span></header>
+<section class="hero"><h1>כל הזיכרונות שלך.<br>במקום אחד.</h1><p class="lead">גלריית תמונות וסרטונים מותאמת לאייפון, עם מטרה לחבר את המדיה שלך ל-Telegram ולגשת אליה מכל מקום.</p>
+<div class="actions"><button class="btn primary" id="pick">בחר תמונות וסרטונים</button><button class="btn secondary" id="setup">הגדרת חיבור</button><input id="files" type="file" accept="image/*,video/*" multiple></div>
+<p id="picked" class="notice" aria-live="polite"></p></section>
+<div class="stats"><div class="stat"><b>—</b><span>קבצים בענן</span></div><div class="stat"><b>—</b><span>נפח בשימוש</span></div><div class="stat"><b>לא מחובר</b><span>מצב Telegram</span></div></div>
+<section class="section"><div class="status"><span class="dot"></span><div><h2>נדרשת הגדרת Telegram</h2><p>הממשק נוצר. כדי להציג את המדיה האמיתית ולהעלות קבצים ל-Telegram צריך להגדיר שירות צד-שרת וסודות API בצורה מאובטחת. לא נשמור מפתחות סודיים בדפדפן.</p></div></div>
+<div class="steps"><div class="step"><span class="num">1</span><p><b>מגדירים את שירות Telegram</b><br>חיבור מאובטח לבוט או לחשבון ולמקור המדיה.</p></div><div class="step"><span class="num">2</span><p><b>מחברים גלריה אמיתית</b><br>טעינת תמונות וסרטונים, חיפוש, תצוגה מקדימה והפעלה.</p></div><div class="step"><span class="num">3</span><p><b>בודקים העלאה מהאייפון</b><br>בחירה מרובה, תור העלאה, התקדמות וטיפול בקבצים גדולים.</p></div></div>
+</section><p class="notice">הערה: בחירת הקבצים כאן בודקת רק את בחירת המדיה במכשיר; כרגע היא אינה מעלה אותם לשום שרת או ל-Telegram.</p><footer>MFIX Cloud · פרויקט נפרד מ-Miki Unlimited Backup</footer>
+</main><script>
+const input=document.getElementById('files');document.getElementById('pick').addEventListener('click',()=>input.click());
+input.addEventListener('change',()=>{const f=[...input.files];const total=f.reduce((n,x)=>n+x.size,0);const size=total>1024*1024?(total/1024/1024).toFixed(1)+' MB':(total/1024).toFixed(0)+' KB';document.getElementById('picked').textContent=f.length?('נבחרו '+f.length+' קבצים ('+size+'). עדיין לא הועלו.'):'';});
+document.getElementById('setup').addEventListener('click',()=>document.querySelector('.section').scrollIntoView({behavior:'smooth',block:'start'}));
+</script></body></html>
